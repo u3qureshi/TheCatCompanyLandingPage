@@ -170,10 +170,10 @@ nav ul li a:hover {
 }
 .aboutus {
     color: yellow;
-    margin: 20px;
+    margin: 6%;
     width: 200%;
-    font-weight: bold;
-    font-size: 30px;
+    font-weight: 800;
+    font-size: 45px;
     margin-left: 0%;
 }
 .subabout{
@@ -215,9 +215,9 @@ nav ul li a:hover {
     flex-direction: column;
 }
 .title{
-    font-size: 50px;
+    font-size: 45px;
     color: whitesmoke;
-    font-weight: 600;
+    font-weight: 700;
     display: flex;
     justify-content: center;
     margin: 6%;
@@ -257,4 +257,151 @@ nav ul li a:hover {
     font-size: 30px;
     margin-top: 25px;
     margin-bottom: 25px;
+}
+.team {
+    background-color: rgb(78, 4, 4);
+}
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 45px;
+}
+.meet-section {
+    background-color: rgb(78, 4, 4);
+    display: flex;
+    flex-direction: column;
+}
+.meet-header {
+    font-size: 45px;
+    color: whitesmoke;
+    font-weight: 800;
+    margin: 40px;
+    text-align: center;
+    margin: 6%;;
+}
+.team-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 8%;
+}
+.our-team
+{
+    background: rgb(240, 188, 168);
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    margin: 0px 25px;
+    padding: 30px 70px;
+
+}
+.our-team .pic {
+    display: inline-block;
+    width: 130px;
+    height: 130px;
+    margin-bottom: 0px;
+    z-index: 1;
+    position: relative;
+}
+.our-team .pic::before{
+    content: "";
+    width: 100%;
+    height: 0;
+    border-radius: 50%;
+    background: red;
+    position: absolute;
+    bottom: 135%;
+    right: 0;
+    left: 0;
+    opacity: 0.2;
+    transform: scale(3);
+    transition: all 0.3s linear 0s;
+
+}
+.our-team:hover .pic::before {
+    height: 100%;
+}
+.our-team .pic::after{
+    content: "";
+    width: 100%;
+    height: 100;
+    border-radius: 50%;
+    background: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.our-team .pic img{
+    height: auto;
+    width: 210px;
+    border-radius: 50%;
+    transform: scale(1);
+    transition: all 0.9s ease 0s;
+}
+.our-team:hover .pic img {
+    box-shadow: 0 0 0 14px red;
+    transform: scale(0.9);
+}
+.our-team .team-content {
+    margin-bottom: 30px;
+}
+.our-team .title {
+    font-size: 25px;
+    font-weight: 700;
+    color: rgb(78, 4, 4);
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    margin-top: 6px;
+}
+.our-team .post {
+    display: block;
+    font-size: 19px;
+    color: rgb(78, 4, 4);
+    margin-top: 6px;
+}
+.our-team .social {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background: red;
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    transition: all 0.5s ease 0s;
+
+}
+.our-team:hover .social {
+    bottom: 0;
+}
+.our-team .social li{
+    display: inline-block;
+}
+.our-team .social li a{
+    text-decoration:none;
+    display: block;
+    padding: 10px;
+    font-size: 17px;
+    color: #fff;
+    transition: all 0.3s ease 0s;
+}
+.our-team .social li a:hover {
+    color: red;
+    background: #f7f5ec;
+}
+.t {
+    font-size: 25px;
+    font-weight: 600;
+    font-family: cursive;
+}
+@media (max-width: 720px) {
+    .team-container{
+        flex-direction: column;
+    }
+    .our-team{
+        width: 80%;
+        margin-top: 30px;
+    }
 }
